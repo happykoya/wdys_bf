@@ -12,7 +12,7 @@ tts_pub = rospy.ServiceProxy('/tts', TTS)
 stt_pub = rospy.ServiceProxy('/stt_server', SpeechToText)
 
 file_name = "question_box.yaml"
-file_path = roslib.packages.get_pkg_dir("education") + "/config/" + file_name
+file_path = roslib.packages.get_pkg_dir("") + "/config/" + file_name
 lp = lp_wdys.Selector(file_path)
 
 
